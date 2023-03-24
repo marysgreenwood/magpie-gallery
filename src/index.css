@@ -1,13 +1,200 @@
+:root {
+  --gray: #424247;
+  --black: #1e1e1e;
+  --blue: #567099;
+  --offwhite: #eaebf1;
+  --white: #ffffff;
+}
+
+/* @font-face {
+  font-family: rotulona-hand;
+  src: url("../assets/rotulona-hand/Rotulona-Hand-FFP-font.ttf");
+} */
+
+/* "magpiegallery text" */
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  font-family: rotulona-hand;
+  position: inherit;
+  top: 20px;
+  text-shadow: -8px 0 var(--black), 0 8px var(--black), 8px 0 var(--black),
+    0 -8px var(--black);
+}
+
+/* "hidden gems" text */
+h2 {
+  color: var(--white);
+  background-color: var(--gray);
+  padding: 4px;
+  text-align: right;
+  vertical-align: bottom;
+  position: absolute;
+  right: 10px;
+  transform: translate(0px, 180px);
+  font-family: Cabin;
+  font-size: 32;
+}
+
+h3 {
+  text-align: center;
+  color: var(--white);
+}
+
+/* big bird picture */
+.splash {
+  background-image: url("./images/magpiegallerysplash.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 330px;
+  position: relative;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--black);
+}
+
+nav {
+  background-color: var(--black);
+  color: white;
+  position: fixed;
+  top: 0px;
+  height: 80px;
+  width: 100%;
+  padding: 10px;
+}
+
+/* for some reason I was getting random padding and margin
+on the ul so I had to specify a lack of said properties here */
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  color: var(--white);
+  padding: 18px;
+  position: relative;
+  vertical-align: middle;
+  background-color: var(--blue);
+}
+
+.Add {
+  background-image: url("./images//addicon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  margin-right: 5px;
+  width: 70px;
+  height: 60px;
+}
+#userSearchForm {
+  margin-right: 5px;
+  padding: 0px;
+}
+#userSearchInput {
+  color: #1e1e1e;
+  width: 200px;
+  height: 60px;
+  max-width: 100%;
+}
+
+.searchBtn {
+  background-image: url("./images/searchicon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--blue);
+  border: 0px;
+  background-size: 70%;
+  margin-right: 0px;
+  width: 70px;
+  height: 60px;
+}
+
+.Login {
+  float: right;
+  font-family: Cabin;
+  font-weight: bold;
+  height: 60px;
+  font-size: 30px;
+  line-height: 25px;
+}
+
+a {
+  color: var(--white);
+}
+
+.showresult {
+  text-align: center;
+  font-family: Cabin;
+  color: var(--white);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.searchentry {
+  color: var(--blue);
+}
+
+#resultimage {
+  background-size: cover;
+  border: 3px var(--offwhite);
+}
+.resultstext {
+  text-align: center;
+  font-family: Cabin;
+  color: var(--white);
+  font-size: 18px;
+  line-height: 10px;
+  margin-top: 20px;
+}
+
+/* h4 {
+  word-wrap: anywhere;
+} */
+.userart {
+  object-fit: contain;
+  width: 100%;
+  margin-bottom: -30px;
+  margin-top: -10px;
+  margin-right: 10px;
+  border: 5px solid white;
+}
+
+.image-display {
+  margin-top: 50px;
+}
+#dashboard-menu {
+  text-align: right;
+  margin-top: 10px;
+}
+.container {
+  margin-top: 50px;
+}
+
+.spaceleft {
+  margin-left: 10px;
+}
+.card {
+  background-color: var(--black);
+  color: #eaebf1;
+  border: 0px;
+  width: 25%;
+}
+
+.container.row {
+  justify-content: center;
+  margin-right: 0px;
+  width: 100%;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
