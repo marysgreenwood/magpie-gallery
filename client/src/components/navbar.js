@@ -36,6 +36,32 @@ function NavBar({ currentPage, handlePageChange }) {
           Dashboard
         </a>
       </li>
+      <li className="nav-item">
+        <a
+          href="#editProfile"
+          onClick={() => handlePageChange("editProfile")}
+          //  TODO: Add a comment explaining what this logic is doing
+
+          className={
+            currentPage === "editProfile" ? "nav-link active" : "nav-link"
+          }
+        >
+          Edit Profile
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#upload"
+          onClick={() => handlePageChange("upload")}
+          //  TODO: Add a comment explaining what this logic is doing
+
+          className={
+            currentPage === "upload" ? "nav-link active" : "nav-link"
+          }
+        >
+          Upload
+        </a>
+      </li>
     </ul>
   );
 }
